@@ -18,6 +18,6 @@ RUN curl -s -o /tmp/tmp.zip $CSAY_URL && \
     unzip /tmp/tmp.zip -d /home/steam/csgo/csgo && \
     rm /tmp/tmp.zip
 
-COPY cfg/* /home/steam/csgo/csgo/cfg
+COPY cfg/ /home/steam/csgo/csgo/cfg
 
 CMD ["/bin/bash"]
